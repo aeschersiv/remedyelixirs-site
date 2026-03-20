@@ -491,13 +491,16 @@ h2::after {
 }
 
 .founder-photo {
-  width: 96px;
-  height: 96px;
+  width: 96px !important;
+  height: 96px !important;
+  min-width: 96px;
+  max-width: 96px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 20%;
   border: 2px solid var(--gold);
   box-shadow: 0 0 20px rgba(201,168,76,0.2);
+  flex-shrink: 0;
 }
 
 .founder-name {
