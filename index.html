@@ -19,6 +19,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Calendly popup widget styles -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9FBZWVMJN"></script>
   <script>
@@ -44,6 +48,12 @@
         <a href="#services">Services</a>
         <a href="#weddings">Weddings</a>
         <a href="#proof">Partners</a>
+        <!-- Calendly Book a Call — nav -->
+        <a href=""
+           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ash-pitd/intro-phone-call-lets-chat'}); return false;"
+           class="btn btn-sm">
+          Book a Call
+        </a>
         <a href="#contact" class="btn btn-sm">Request Potions</a>
       </div>
       <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" id="mobile-toggle">
@@ -61,6 +71,12 @@
       <p class="hero-sub">Distribution, experiential marketing, and cultural programming — serving Austin, San Antonio, Houston, Dallas-Fort Worth, and the entire Texas Triangle.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-cta">Request Potions</a>
+        <!-- Calendly Book a Call — hero -->
+        <a href=""
+           onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ash-pitd/intro-phone-call-lets-chat'}); return false;"
+           class="btn btn-lg btn-ghost">
+          Book a Call
+        </a>
         <a href="#about" class="btn btn-lg btn-ghost">Learn More</a>
       </div>
     </div>
@@ -289,6 +305,9 @@
       <p class="copyright">&copy; 2026 Remedy Elixirs. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Calendly popup widget script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
   <script>
     // Mobile nav toggle
