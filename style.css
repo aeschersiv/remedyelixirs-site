@@ -484,10 +484,19 @@ h2::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 20px;
   margin-top: 56px;
   padding-top: 40px;
   border-top: 1px solid rgba(201,168,76,0.1);
+}
+
+.founder-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 16px rgba(201,168,76,0.15);
 }
 
 .founder-name {
@@ -789,6 +798,21 @@ h2::after {
 .footer-links { display: flex; gap: 28px; }
 .footer-links a { color: var(--gray); font-size: 0.88rem; }
 .footer-links a:hover { color: var(--gold); }
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a {
+  color: var(--gray);
+  transition: color 0.25s, transform 0.25s;
+}
+
+.footer-social a:hover {
+  color: var(--gold);
+  transform: translateY(-2px);
+}
 
 .copyright {
   text-align: center;
