@@ -1,110 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remedy Elixirs — Functional Beverages for Texas</title>
+  <meta name="description" content="Austin-rooted functional beverage distribution, experiential marketing, and cultural programming across the Texas Triangle.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:title" content="Remedy Elixirs — Functional Beverages for Texas">
+  <meta property="og:description" content="Distribution, experiential marketing, and cultural programming for functional beverages across the Texas Triangle.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://remedyelixirs.vip">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&h=630&fit=crop&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Remedy Elixirs — Functional Beverages for Texas">
+  <meta name="twitter:description" content="Distribution, experiential marketing, and cultural programming for functional beverages across the Texas Triangle.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9FBZWVMJN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P9FBZWVMJN');
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remedy Elixirs — Functional Beverages for Texas</title>
     <style>
-        body { 
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            max-width: 720px; 
-            margin: 40px auto; 
-            padding: 0 20px; 
-            line-height: 1.7; 
-            color: #333; 
-            background: #f9f7f4; 
-        }
-        h1, h2, h3 { 
-            font-weight: 700; 
-            line-height: 1.2; 
-        }
-        h1 { font-size: 2.8rem; margin-top: 2em; }
-        h2 { font-size: 2.1rem; margin-top: 2.5em; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
-        h3 { font-size: 1.5rem; margin-top: 2em; }
-        p, ul, li { font-size: 1.1rem; }
-        strong { color: #222; }
-        .hero-text { 
-            text-align: center; 
-            margin: 60px 0 80px; 
-        }
-        .scroll { 
-            text-align: center; 
-            font-size: 1.3rem; 
-            margin: 30px 0; 
-            opacity: 0.7; 
-        }
-        ul { padding-left: 20px; }
-        .contact { 
-            background: #2c1a12; 
-            color: white; 
-            padding: 60px 30px; 
-            text-align: center; 
-            margin: 80px -20px 0; 
-            border-radius: 8px; 
-        }
-        a { color: #d97757; text-decoration: underline; }
-        a:hover { color: #b85c3d; }
-        .testimonial { 
-            font-style: italic; 
-            margin: 40px 0; 
-            padding: 20px; 
-            background: #fff; 
-            border-left: 5px solid #d97757; 
-        }
+        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background: #f9f7f4; }
+        header, section { padding: 60px 20px; max-width: 900px; margin: 0 auto; }
+        h1 { font-size: 3.5rem; margin: 0; }
+        h2 { font-size: 2.2rem; margin-top: 2em; }
+        h3 { font-size: 1.6rem; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; color: white; text-align: center; padding: 200px 20px 120px; }
+        .scroll { text-align: center; font-size: 1.1rem; margin: 20px 0; }
+        .section { background: white; margin: 40px auto; border-radius: 12px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        ul { list-style: none; padding: 0; }
+        li { margin: 15px 0; font-size: 1.1rem; }
+        .contact { background: #2c1a12; color: white; text-align: center; }
+        a { color: #d97757; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <div class="hero-text">
-        <h1>Remedy Elixirs — Functional Beverages for Texas</h1>
-        <p>Austin, TX — Est. 2025</p>
-        
-        <h1>The Future of Beverage<br>is Functional</h1>
-        <p>Distribution, experiential marketing, and cultural programming — serving Austin, San Antonio, Houston, Dallas-Fort Worth, and the entire Texas Triangle.</p>
-        
-        <div class="scroll">↓ Scroll</div>
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="logo" aria-label="Remedy Elixirs home">
+        <img src="remedy-logo.png" alt="Remedy Elixirs Logo" style="width:36px;height:36px;object-fit:contain;vertical-align:middle;margin-right:8px;"> Remedy Elixirs
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#weddings">Weddings</a>
+        <a href="#proof">Partners</a>
+        <a href="#contact" class="btn btn-sm">Request Potions</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" id="mobile-toggle">
+        <span class="hamburger"></span>
+      </button>
     </div>
+  </nav>
 
-    <h2>Who We Are</h2>
-    <h3>What We Do</h3>
-    <p>Texas is the fastest-growing market in the U.S. for functional beverages, non-alcoholic and sober-curious consumption, and nervous-system-regulating products.</p>
-    <p>What's been missing is infrastructure and trusted operators who can get these products placed correctly, build culture around them, and activate communities at scale.</p>
-    <p><strong>Remedy Elixirs</strong> sits at the intersection of brands, venues, wellness, and nightlife. We are the centralized functional beverage operation that connects innovative brands with the right audiences across <strong>Austin</strong>, <strong>San Antonio</strong>, <strong>Houston</strong>, <strong>Dallas</strong>, and <strong>Fort Worth</strong>.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <canvas class="hero-particles" id="hero-particles" aria-hidden="true"></canvas>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Austin, TX — Est. 2025</p>
+      <h1>The Future of Beverage<br>is <span class="gold shimmer">Functional</span></h1>
+      <p class="hero-sub">Distribution, experiential marketing, and cultural programming — serving Austin, San Antonio, Houston, Dallas-Fort Worth, and the entire Texas Triangle.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-cta">Request Potions</a>
+        <a href="#about" class="btn btn-lg btn-ghost">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <p><strong>5 Major Texas Markets</strong><br>
-       <strong>360° Full-Service Operation</strong><br>
-       <strong>∞ Growth Potential</strong></p>
-    <p><em>Ash Moore — Founder</em></p>
+  <!-- Logo Showcase -->
+  <section style="background:#0a0a0a;padding:60px 0;text-align:center;border-top:1px solid rgba(201,168,76,0.15);border-bottom:1px solid rgba(201,168,76,0.15);">
+    <div class="container">
+      <p class="section-tag" style="text-align:center;margin-bottom:32px;">Our Brand</p>
+      <img src="remedy-logo.png" alt="Remedy Elixirs" style="width:180px;height:180px;object-fit:contain;filter:drop-shadow(0 0 24px rgba(201,168,76,0.4));">
+    </div>
+  </section>
 
-    <h2>How We Serve You</h2>
-    
-    <h3>⚗ Distribution</h3>
-    <p>Strategic placement of functional beverages across venues, retail, and hospitality throughout the Texas Triangle. We get your product where it matters.</p>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Who We Are</p>
+        <h2>What We Do</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <p class="lead">Texas is the fastest-growing market in the U.S. for functional beverages, non-alcoholic and sober-curious consumption, and nervous-system-regulating products.</p>
+          <p>What's been missing is infrastructure and trusted operators who can get these products placed correctly, build culture around them, and activate communities at scale.</p>
+          <p>Remedy Elixirs sits at the intersection of brands, venues, wellness, and nightlife. We are the centralized functional beverage operation that connects innovative brands with the right audiences across <strong>Austin</strong>, <strong>San Antonio</strong>, <strong>Houston</strong>, <strong>Dallas</strong>, and <strong>Fort Worth</strong>.</p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat">
+            <span class="stat-number" data-count="5">5</span>
+            <span class="stat-label">Major Texas Markets</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">360°</span>
+            <span class="stat-label">Full-Service Operation</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Growth Potential</span>
+          </div>
+        </div>
+      </div>
+      <div class="founder reveal">
+        <img src="ash-moore.jpg" alt="Ash Moore, Founder of Remedy Elixirs" style="width:96px;height:96px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #c9a84c;box-shadow:0 0 20px rgba(201,168,76,0.2);flex-shrink:0;">
+        <div class="founder-info">
+          <span class="founder-name">Ash Moore</span>
+          <span class="founder-title">Founder</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h3>✦ Experiential Marketing</h3>
-    <p>Immersive brand activations that let consumers taste, feel, and connect with functional products in unforgettable settings.</p>
+  <!-- Services -->
+  <section id="services" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What We Offer</p>
+    <header class="hero">
+        <h1>Remedy Elixirs</h1>
+        <p style="font-size:1.5rem;">Functional Beverages for Texas</p>
+        <p>Austin, TX — Est. 2025</p>
+        <h2 style="margin:30px 0;">The Future of Beverage<br>is Functional</h2>
+        <p>Distribution, experiential marketing, and cultural programming — serving Austin, San Antonio, Houston, Dallas-Fort Worth, and the entire Texas Triangle.</p>
+        <div class="scroll">↓ Scroll</div>
+    </header>
 
-    <h3>♫ Cultural Programming</h3>
-    <p>Events, partnerships, and community builds that position functional beverages at the center of Texas nightlife, wellness, and social culture.</p>
+    <section class="section">
+        <h2>Who We Are</h2>
+        <h3>What We Do</h3>
+        <p>Texas is the fastest-growing market in the U.S. for functional beverages, non-alcoholic and sober-curious consumption, and nervous-system-regulating products.</p>
+        <p>What's been missing is infrastructure and trusted operators who can get these products placed correctly, build culture around them, and activate communities at scale.</p>
+        <p><strong>Remedy Elixirs</strong> sits at the intersection of brands, venues, wellness, and nightlife. We are the centralized functional beverage operation that connects innovative brands with the right audiences across <strong>Austin, San Antonio, Houston, Dallas, and Fort Worth</strong>.</p>
+        
+        <p><strong>5 Major Texas Markets</strong> • <strong>360° Full-Service Operation</strong> • <strong>∞ Growth Potential</strong></p>
+        <p><em>Ash Moore — Founder</em></p>
+    </section>
 
-    <h3>↗ Brand Partners & Investors</h3>
-    <p>Looking for the right operator to scale your functional beverage brand in Texas? Let's talk about distribution partnerships and investment opportunities.</p>
+    <section class="section">
+        <h2>How We Serve You</h2>
+      </div>
+      <div class="grid">
+        <div class="card reveal" style="--delay: 0">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-icon">⚗</div>
+            <h3>Distribution</h3>
+            <p>Strategic placement of functional beverages across venues, retail, and hospitality throughout the Texas Triangle. We get your product where it matters.</p>
+          </div>
+        </div>
+        <div class="card reveal" style="--delay: 1">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-icon">✦</div>
+            <h3>Experiential Marketing</h3>
+            <p>Immersive brand activations that let consumers taste, feel, and connect with functional products in unforgettable settings.</p>
+          </div>
+        </div>
+        <div class="card reveal" style="--delay: 2">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-icon">♫</div>
+            <h3>Cultural Programming</h3>
+            <p>Events, partnerships, and community builds that position functional beverages at the center of Texas nightlife, wellness, and social culture.</p>
+          </div>
+        </div>
+        <div class="card reveal" style="--delay: 3">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-icon">↗</div>
+            <h3>Brand Partners & Investors</h3>
+            <p>Looking for the right operator to scale your functional beverage brand in Texas? Let's talk about distribution partnerships and investment opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h2>Weddings & Events</h2>
-    <p><strong>Celebrations without the hangover. Memories without the regret.</strong></p>
+  <!-- Weddings / Events -->
+  <section id="weddings" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Celebrations</p>
+        
+        <h3>⚗ Distribution</h3>
+        <p>Strategic placement of functional beverages across venues, retail, and hospitality throughout the Texas Triangle.</p>
+        
+        <h3>✦ Experiential Marketing</h3>
+        <p>Immersive brand activations that let consumers taste, feel, and connect with functional products in unforgettable settings.</p>
+        
+        <h3>♫ Cultural Programming</h3>
+        <p>Events, partnerships, and community builds that position functional beverages at the center of Texas nightlife, wellness, and social culture.</p>
+        
+        <h3>↗ Brand Partners & Investors</h3>
+        <p>Looking for the right operator to scale your functional beverage brand in Texas? Let's talk about distribution partnerships and investment opportunities.</p>
+    </section>
 
-    <h3>Elevate Your Event</h3>
-    <p>Imagine a wedding bar stocked with craft functional elixirs — sophisticated, delicious, and designed to keep your guests energized and present all night long. No hangovers. No sloppy speeches. Just pure celebration.</p>
-    
-    <ul>
-        <li>Curated functional beverage menus tailored to your event</li>
-        <li>Non-alcoholic and low-alcohol options that actually taste incredible</li>
-        <li>Mushroom, adaptogen, and botanical elixirs</li>
-        <li>Professional bar service and branded experiences</li>
-        <li>Corporate events, galas, festivals, and private parties</li>
-    </ul>
-    <p><a href="#contact">Plan Your Event →</a></p>
+    <section class="section">
+        <h2>Weddings & Events</h2>
+        <p class="section-lead">Celebrations without the hangover. Memories without the regret.</p>
+      </div>
+      <div class="wedding-grid">
+        <div class="wedding-text reveal">
+          <h3>Elevate Your Event</h3>
+          <p>Imagine a wedding bar stocked with craft functional elixirs — sophisticated, delicious, and designed to keep your guests energized and present all night long. No hangovers. No sloppy speeches. Just pure celebration.</p>
+          <ul class="check-list">
+        <p><strong>Celebrations without the hangover. Memories without the regret.</strong></p>
+        
+        <h3>Elevate Your Event</h3>
+        <p>Imagine a wedding bar stocked with craft functional elixirs — sophisticated, delicious, and designed to keep your guests energized and present all night long.</p>
+        <ul>
+            <li>Curated functional beverage menus tailored to your event</li>
+            <li>Non-alcoholic and low-alcohol options that actually taste incredible</li>
+            <li>Mushroom, adaptogen, and botanical elixirs</li>
+            <li>Professional bar service and branded experiences</li>
+            <li>Corporate events, galas, festivals, and private parties</li>
+          </ul>
+          <a href="#contact" class="btn">Plan Your Event</a>
+        </div>
+        <div class="wedding-visual reveal">
+          <div class="visual-card">
+            <div class="visual-glow"></div>
+            <span class="visual-emoji">🍸</span>
+            <p>"Our guests couldn't believe these weren't cocktails. Best decision we made for our wedding."</p>
+            <span class="testimonial-attr">— Recent Bride, Austin TX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="testimonial">
-        "Our guests couldn't believe these weren't cocktails. Best decision we made for our wedding."<br><br>
-        — Mallory Hamilton, Austin TX
+  <!-- Social Proof -->
+  <section id="proof" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">What We Carry</p>
+        </ul>
+        <p><a href="#contact">Plan Your Event →</a></p>
+        
+        <p style="font-style:italic; margin-top:40px;">"Our guests couldn't believe these weren't cocktails. Best decision we made for our wedding."<br>
+        — Recent Bride, Austin TX</p>
+    </section>
+
+    <section class="section">
+        <h2>The New Bar Menu</h2>
+        <p class="section-lead">We source and distribute the best functional beverage brands across Texas venues, events, and retail.</p>
+      </div>
+      <div class="proof-grid reveal">
+        <div class="proof-item">Adaptogens</div>
+        <div class="proof-item">Nootropics</div>
+        <div class="proof-item">CBD & Hemp</div>
+        <div class="proof-item">Mushroom Blends</div>
+        <div class="proof-item">Botanical Spirits</div>
+        <div class="proof-item">Kava</div>
+      </div>
+      <div class="proof-cta reveal">
+        <p>Have a functional beverage brand? Let's get it in front of the right people.</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Lead Form -->
+  <section id="contact" class="section">
+    <div class="container container-sm">
+      <div class="section-header reveal">
+        <p class="section-tag">Get Started</p>
+        <h2>Request Potions</h2>
+        <p class="section-lead">Whether you're a brand, venue, event planner, or investor — tell us what you need and we'll craft the right solution.</p>
+      </div>
+      <div class="form-wrapper reveal">
+        <form action="https://formspree.io/f/xzdjoldj" method="POST" class="form" id="lead-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(512) 555-0000">
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm interested in...</label>
+              <select id="interest" name="interest">
+                <option value="">Select one</option>
+                <option value="distribution">Distribution Partnership</option>
+                <option value="wedding">Wedding / Private Event</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="venue">Venue Placement</option>
+                <option value="brand">Brand Partnership</option>
+                <option value="investment">Investment Opportunity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-full btn-lg">Send Request</button>
+        </form>
+        <p class="form-note">We'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="#contact" class="btn">Request Potions</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo">
+            <img src="remedy-logo.png" alt="" style="width:28px;height:28px;object-fit:contain;vertical-align:middle;margin-right:6px;">
+            Remedy Elixirs
+          </span>
+          <p>Austin, Texas — Serving the Texas Triangle</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#weddings">Weddings</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://instagram.com/remedyelixirbar" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ashton-moore" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Remedy Elixirs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', function() {
+      const isOpen = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          navLinks.classList.remove('open');
+          toggle.classList.remove('active');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // Nav background on scroll + sticky CTA
+    const nav = document.querySelector('.nav');
+    const stickyCta = document.getElementById('sticky-cta');
+    const contactSection = document.getElementById('contact');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+      if (window.innerWidth <= 768) {
+        const contactTop = contactSection.getBoundingClientRect().top;
+        stickyCta.classList.toggle('visible', window.scrollY > 400 && contactTop > window.innerHeight);
+      }
+    }, { passive: true });
+
+    // Hero particles
+    (function() {
+      const canvas = document.getElementById('hero-particles');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      let w, h;
+
+      function resize() {
+        w = canvas.width = canvas.offsetWidth;
+        h = canvas.height = canvas.offsetHeight;
+      }
+
+      function init() {
+        resize();
+        particles = [];
+        const count = Math.floor((w * h) / 18000);
+        for (let i = 0; i < count; i++) {
+          particles.push({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            r: Math.random() * 1.5 + 0.5,
+            dx: (Math.random() - 0.5) * 0.3,
+            dy: (Math.random() - 0.5) * 0.3,
+            o: Math.random() * 0.4 + 0.1
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+        particles.forEach(p => {
+          p.x += p.dx;
+          p.y += p.dy;
+          if (p.x < 0) p.x = w;
+          if (p.x > w) p.x = 0;
+          if (p.y < 0) p.y = h;
+          if (p.y > h) p.y = 0;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(201,168,76,${p.o})`;
+          ctx.fill();
+        });
+        requestAnimationFrame(draw);
+      }
+
+      init();
+      draw();
+      window.addEventListener('resize', init);
+    })();
+
+    // Form submission
+    document.getElementById('lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(r => {
+        if (r.ok) {
+          form.innerHTML = '<div class="form-success"><h3>Request Received</h3><p>We\'ll be in touch soon. In the meantime, good things are brewing.</p></div>';
+        } else {
+          btn.textContent = 'Send Request';
+          btn.disabled = false;
+          alert('Something went wrong. Please email us directly at ash@nubluhou.com');
+        }
+      }).catch(() => {
+        btn.textContent = 'Send Request';
+        btn.disabled = false;
+        alert('Something went wrong. Please email us directly at ash@nubluhou.com');
+      });
+    });
+  </script>
+        <p>We source and distribute the best functional beverage brands across Texas venues, events, and retail.</p>
+        <ul>
+            <li>Adaptogens</li>
+            <li>Nootropics</li>
+            <li>CBD & Hemp</li>
+            <li>Mushroom Blends</li>
+            <li>Botanical Spirits</li>
+            <li>Kava</li>
+        </ul>
+        <p><a href="#contact">Get In Touch</a> • <a href="#contact">Request Potions</a></p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <p>Ready to bring functional beverages to your venue, event, or brand?</p>
+        <p style="font-size:1.3rem; margin:30px 0;">
+            <a href="mailto:your@email.com" style="color:white;">Email Us</a>
+        </p>
+        <p>Austin, Texas</p>
+    </section>
