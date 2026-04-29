@@ -430,38 +430,3 @@
 
 </body>
 </html>
-      }).then(r => {
-        if (r.ok) {
-          form.innerHTML = '<div class="form-success"><h3>Request Received</h3><p>We\'ll be in touch soon. In the meantime, good things are brewing.</p></div>';
-        } else {
-          btn.textContent = 'Send Request';
-          btn.disabled = false;
-          alert('Something went wrong. Please email us directly at ash@nubluhou.com');
-        }
-      }).catch(() => {
-        btn.textContent = 'Send Request';
-        btn.disabled = false;
-        alert('Something went wrong. Please email us directly at ash@nubluhou.com');
-      });
-    });
-  </script>
-        <p>We source and distribute the best functional beverage brands across Texas venues, events, and retail.</p>
-        <ul>
-            <li>Adaptogens</li>
-            <li>Nootropics</li>
-            <li>CBD & Hemp</li>
-            <li>Mushroom Blends</li>
-            <li>Botanical Spirits</li>
-            <li>Kava</li>
-        </ul>
-        <p><a href="#contact">Get In Touch</a> • <a href="#contact">Request Potions</a></p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Let's Connect</h2>
-        <p>Ready to bring functional beverages to your venue, event, or brand?</p>
-        <p style="font-size:1.3rem; margin:30px 0;">
-            <a href="mailto:your@email.com" style="color:white;">Email Us</a>
-        </p>
-        <p>Austin, Texas</p>
-    </section>
